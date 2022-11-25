@@ -1,0 +1,15 @@
+#pragma once
+#include<iostream>
+#define Max 100
+class Stack
+{
+	int top;
+public:
+	Stack();         //default constructor
+	int my_stack[Max];
+	bool push(int a);
+	int pop();
+	bool is_empty();
+	int peek();
+};
+
