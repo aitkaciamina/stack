@@ -1,0 +1,46 @@
+#include "Stack.h"
+#include<iostream>
+using namespace std;
+Stack::Stack()
+{
+	top = -1;
+}
+
+bool Stack::push(int a)
+{
+	if (top = Max - 1)
+		return false;
+	else
+	{
+		my_stack[++top] = a;
+		return true;
+	}
+}
+int Stack::Stack::peek()
+{
+	if (top == -1)
+		return false;
+	else
+	{
+		cout<<my_stack[top];
+		return true;
+	}
+}
+bool Stack::is_empty()
+{
+	return (top < 0);
+}
+int Stack::pop()
+{
+	if (top < 0)
+	{
+		cout << "underflow";
+		return 0;
+	}
+	else
+	{
+		int item = my_stack[top--];
+		return item;
+	}
+
+}
